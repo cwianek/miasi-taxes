@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/example-taxes.iml" filepath="$PROJECT_DIR$/example-taxes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/miasi-taxes.iml" filepath="$PROJECT_DIR$/miasi-taxes.iml" />
     </modules>
   </component>
 </project>

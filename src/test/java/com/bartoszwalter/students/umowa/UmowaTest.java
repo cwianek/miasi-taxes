@@ -21,7 +21,7 @@ public class UmowaTest {
 
     @Test
     public void umowaOPrace() throws Exception {
-        CzytnikDanych czytnikDanych = Mockito.mock(CzytnikDanych.class);
+        ICzytnik czytnikDanych = Mockito.mock(CzytnikDanych.class);
         when(czytnikDanych.getUmowa()).thenReturn('P');
         when(czytnikDanych.getPodstawa()).thenReturn(1000d);
 
@@ -34,7 +34,7 @@ public class UmowaTest {
 
     @Test
     public void umowaZlecenie() throws Exception {
-        CzytnikDanych czytnikDanych = Mockito.mock(CzytnikDanych.class);
+        ICzytnik czytnikDanych = Mockito.mock(CzytnikDanych.class);
         when(czytnikDanych.getUmowa()).thenReturn('Z');
         when(czytnikDanych.getPodstawa()).thenReturn(1000d);
 
