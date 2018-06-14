@@ -9,11 +9,10 @@ public class DrukarkaDanych {
     public void wyswietl(Map<String, Double> parametry)
     {
 
-       parametry.forEach( (k,v)-> {System.out.print(k + "\t"); System.out.println(v);} );
+        parametry.forEach( (k,v)-> {System.out.print(k + "\t"); System.out.println(v);} );
+        DecimalFormat df00 = new DecimalFormat("#.00");
+        DecimalFormat df = new DecimalFormat("#");
 
-//        DecimalFormat df00 = new DecimalFormat("#.00");
-//        DecimalFormat df = new DecimalFormat("#");
-//
 //        switch (umowa){
 //            case 'P':
 //
