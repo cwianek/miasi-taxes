@@ -45,4 +45,28 @@ public class UmowaTest {
         Assert.assertTrue(umowa.calculate()==728.239);
     }
 
+    @Test
+    public void skladkaZdrowotna() throws Exception {
+        Umowa umowa = new UmowaZlecenie(1000);
+        umowa.calculate();
+        Assert.assertTrue(umowa.oPodstawa * 7.75 / 100 == umowa.sZdrow2);
+        Assert.assertTrue(umowa.oPodstawa * 9.00 / 100 == umowa.sZdrow1);
+    }
+
+    @Test
+    public void obliczPodstawe() throws Exception {
+        Umowa zlecenie = new UmowaZlecenie(1000);
+        zlecenie.calculate();
+
+        Umowa oprace = new UmowaStala(1000);
+        oprace.calculate();
+
+        Assert.assertTrue(zlecenie.oPodstawa == 862.9);
+        Assert.assertTrue(oprace.oPodstawa == 862.9);
+    }
+
+
+
+
+
 }
